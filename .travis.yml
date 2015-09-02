@@ -1,0 +1,6 @@
+language: csharp
+solution: TravisCITest.sln
+install:
+  - nuget restore TravisCITest.sln
+script:
+  - xbuild /p:Configuration=Release TravisCITest.sln
